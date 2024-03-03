@@ -20,6 +20,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
     Component.PageTitle(),
@@ -34,6 +35,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.MobileOnly(Component.Explorer({
+      folderClickBehavior: "link",
+    })),
   ],
 }
 
