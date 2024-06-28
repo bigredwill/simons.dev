@@ -1,4 +1,5 @@
 {
     "cleanUrls": true,
-    "buildCommand": "npx quartz build"
+    "buildCommand": "npx quartz build",
+    "outputDirectory": "build"
 }
